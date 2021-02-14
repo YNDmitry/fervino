@@ -158,10 +158,11 @@
     </section>
 
     <section id="s3" class="section">
+
       <div class="mask">
         <img src="assets/site/images/bg-min.jpg" alt="" class="bg-min">
       </div>
-      
+
       <img src="assets/site/images/earh-soil.png" srcset="assets/site/images/earh-soil-p-500.png 500w, assets/site/images/earh-soil-p-800.png 800w, assets/site/images/earh-soil-p-1080.png 1080w, assets/site/images/earh-soil.png 3834w" sizes="100vw" alt="" class="earth">
       <div id="grapes-2" class="anchor _3"></div>
       <div id="grapes-3" class="anchor _4"></div>
@@ -262,9 +263,9 @@
             var span = $(this)
             if( e.type == 'mouseenter') {
 
-              span.stop().animate({
+              span.stop(true, false).animate({
                 textStrokeWidth: '1px'
-              })
+              }, 400)
               span.addClass('wave')
 
             } else if( e.type == 'mouseleave' ) {
@@ -274,7 +275,7 @@
               })
               setTimeout(() => {
                 span.removeClass('wave')
-              }, 800)
+              }, 400)
 
             }  
           })

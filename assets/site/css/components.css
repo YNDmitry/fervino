@@ -13,7 +13,7 @@ canvas {
 .animation-text {
   -webkit-text-stroke-color: #6C6C6C;
           text-stroke-color: #6C6C6C;
-  }
+}
 .wave {
 	animation: waveAnim 4s linear infinite;
   -webkit-animation: waveAnim 4s linear infinite;
@@ -39,7 +39,6 @@ canvas {
 }
 .hide {
   pointer-events: none;
-  -webkit-pointer-events: none;
 }
 .nav-menu {
 	backdrop-filter: blur(100px);
