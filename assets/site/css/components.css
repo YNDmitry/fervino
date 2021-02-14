@@ -23,11 +23,11 @@ canvas {
 @keyframes waveAnim {
         0%
         {
-          background-position: 50% 150%;
+          background-position: 50% 6vh;
         }
         50%
         {
-          background-position: 150% 150%;
+          background-position: 150% 6vh;
         }
       }
 .cursor-animation {
@@ -38,7 +38,8 @@ canvas {
   display: none;
 }
 .hide {
-pointer-events: none;
+  pointer-events: none;
+  -webkit-pointer-events: none;
 }
 .nav-menu {
 	backdrop-filter: blur(100px);
