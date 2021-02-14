@@ -17,7 +17,7 @@ h1 {
   margin-bottom: 30px;
   font-family: Gothampro, sans-serif;
   color: transparent;
-  font-size: 134px;
+  font-size: 130px;
   line-height: 108%;
   font-weight: 900;
 }
@@ -78,9 +78,9 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 68px;
-  margin-right: 80px;
-  margin-left: 80px;
+  padding-top: 68px;
+  padding-right: 80px;
+  padding-left: 80px;
   background-color: transparent;
 }
 
@@ -289,7 +289,7 @@ img {
 .wave {
   z-index: 7;
   background-image: url('../images/wave.svg');
-  background-position: 50% 150%;
+  background-position: 50% 5vh;
   background-size: auto;
   background-repeat: repeat-x;
   -webkit-transition: background-position 300ms linear;
@@ -510,7 +510,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 95%;
-  max-width: 565px;
+  max-width: 650px;
   min-height: 2500px;
   margin-right: auto;
   margin-left: 17vw;
@@ -649,7 +649,7 @@ img {
   left: 0%;
   top: -10%;
   right: 0%;
-  z-index: 3;
+  z-index: 9;
   width: 100%;
 }
 
@@ -719,6 +719,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: 100% 100%;
 }
 
 .info-block-wrapper {
@@ -733,8 +734,11 @@ img {
 
 .particle {
   position: absolute;
-  width: 100vw;
   left: -60%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100vw;
 }
 
 .overflow-hidden {
@@ -1002,9 +1006,9 @@ img {
 
 @media screen and (max-width: 991px) {
   .navbar {
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .animation-text {
@@ -1106,8 +1110,9 @@ img {
   }
 
   .navbar {
-    margin-right: 10px;
-    margin-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .pages-navigation {

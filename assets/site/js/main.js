@@ -38,10 +38,8 @@
         // Fit renderer to the screen
         if ( options.fullScreen === false ) {
           renderer.view.style.top       = '-2%';
-          renderer.view.style.mixBlendMode      = 'lighten';
         } else {
           renderer.view.style.top       = '-2%';
-          renderer.view.style.mixBlendMode      = 'lighten';
         }
         
         displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
@@ -61,8 +59,8 @@
           displacementSprite.y = renderer.height / 2; 
         }
 
-        displacementSprite.scale.x = 2;
-        displacementSprite.scale.y = 2;
+        displacementSprite.scale.x = 5;
+        displacementSprite.scale.y = 5;
   
         
         stage.addChild( displacementSprite );

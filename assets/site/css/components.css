@@ -37,12 +37,6 @@ canvas {
 .hide {
 pointer-events: none;
 }
-.wino {
-	mix-blend-mode: lighten;
-}
-.particle {
-	mix-blend-mode: lighten;
-}
 .nav-menu {
 	backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
