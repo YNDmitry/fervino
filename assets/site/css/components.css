@@ -16,6 +16,9 @@ canvas {
   }
 .wave {
 	animation: waveAnim 4s linear infinite;
+  -webkit-animation: waveAnim 4s linear infinite;
+  -moz-animation: waveAnim 4s linear infinite;
+  -o-animation: waveAnim 4s linear infinite;
 }
 @keyframes waveAnim {
         0%
