@@ -734,6 +734,7 @@ img {
 .particle {
   position: absolute;
   width: 100vw;
+  left: -60%;
 }
 
 .overflow-hidden {
