@@ -59,8 +59,8 @@
           displacementSprite.y = renderer.height / 2; 
         }
 
-        displacementSprite.scale.x = 5;
-        displacementSprite.scale.y = 5;
+        displacementSprite.scale.x = 2.5;
+        displacementSprite.scale.y = 2.5;
   
         
         stage.addChild( displacementSprite );

@@ -216,6 +216,7 @@ img {
 
 .heading-text {
   font-family: Gothampro, sans-serif;
+  font-size: 19px;
 }
 
 .scroll-wrapper {
@@ -381,15 +382,15 @@ img {
 
 .cursor-cirlce {
   position: fixed;
-  left: -2.5px;
-  top: -2.5px;
+  left: -3.5px;
+  top: -3.5px;
   z-index: 999;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -525,7 +526,7 @@ img {
 }
 
 .sticky-wrapper.margin-top-off {
-  height: 279vh;
+  height: 290vh;
   min-height: auto;
   padding-top: 20vh;
   padding-bottom: 0vh;
@@ -600,9 +601,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 2000px;
-  margin-left: auto;
   width: 50%;
+  height: 2000px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;

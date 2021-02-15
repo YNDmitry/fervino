@@ -221,23 +221,11 @@
     <script src="assets/site/js/pixi.min.js"></script>
     <script>
       window.SmoothScrollOptions = { 
-        animationTime    : 2000, // [ms]
-        stepSize         : 500, // [px]
-        // Acceleration
-        accelerationDelta : 100,  // 50
-        accelerationMax   : 1,   // 3
-        // Keyboard Settings
-        keyboardSupport   : true,  // option
-        arrowScroll       : 50,    // [px]
-        // Pulse (less tweakable)
-        // ratio of "tail" to "acceleration"
-        pulseAlgorithm   : true,
-        pulseScale       : 4,
-        pulseNormalize   : 1,
-        // Other
-        touchpadSupport   : false, // ignore touchpad by default
-        fixedBackground   : true, 
-        excluded          : ''    
+        animationTime: 5000,
+        accelerationDelta: 100,
+        accelerationMax: 1,
+        pulseAlgorithm: true,
+        pulseNormalize: 1,
       }
     </script>
     <script>
@@ -299,7 +287,7 @@
 				sprites: spriteImagesSrc,
 				displacementImage: 'assets/site/images/clouds.jpg',
 				autoPlay: true,
-				autoPlaySpeed: [10, 3],
+				autoPlaySpeed: [1, 2],
 			});
 		</script>
   </body>
