@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html data-wf-page="page">
+  <head>
+    <meta charset="utf-8" />
+    <title>Колекция вин</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="assets/site/css/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/site/css/components.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/site/css/fervino.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" rel="stylesheet" type="text/css">
+    <style>
+      .remodal-wrapper {
+        padding: 0px;
+        overflow: hidden;
+      }
+      .remodal-wrapper:after {
+        display: block;
+        height: auto;
+        margin: 0px;
+      }
+      .remodal {
+        padding: 0;
+        max-width: none;
+        width: auto;
+        margin: 0px;
+      }
+      @keyframes remodal-opening-keyframes {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes remodal-closing-keyframes {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+      
+      <div class="tabs-menu w-tab-menu">
+        <a data-w-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
+          <div>Красные вина</div>
+        </a>
+
+        <a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
+          <div>Игристые вина</div>
+        </a>
+      </div>
+
+      <div class="tabs-content w-tab-content">
+
+        <div data-w-tab="Tab 1" class="tab-content-1 w-tab-pane w--tab-active">
+          <div class="container">
+            <div class="bottles-grid">
+              <div class="wine-card"><img src="assets/site/images/bottle-q.png" width="87" alt="">
+                <div class="info-wine">
+                  <div>Сухое красное</div>
+                  <a data-remodal-target="modal2" href="#" class="wine-link">FERVINO Каберне Совиньон</a>
+                </div>
+              </div>
+              <div class="wine-card"><img src="assets/site/images/bottle-w.png" width="99" alt="">
+                <div class="info-wine">
+                  <div>Сухое красное</div>
+                  <a data-remodal-target="modal2" href="#" class="wine-link">Fervino Красное</a>
+                </div>
+              </div>
+              <div class="wine-card"><img src="assets/site/images/bottle-e.png" width="87" alt="">
+                <div class="info-wine">
+                  <div>Сухое красное</div>
+                  <a data-remodal-target="modal2" href="#" class="wine-link">FERVINO мерло</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-w-tab="Tab 2" class="tab-content-2 w-tab-pane">
+          <div class="container">
+            <div class="bottles-grid">
+              <div class="wine-card"><img src="assets/site/images/bottle-r.png" width="87" alt="">
+                <div class="info-wine black">
+                  <div>Брют</div>
+                  <a data-remodal-target="modal" href="#" class="wine-link black">Семигристое розовое</a>
+                </div>
+              </div>
+              <div class="wine-card"><img src="assets/site/images/bottle-t.png" width="87" alt="">
+                <div class="info-wine black">
+                  <div>Брют</div>
+                  <a data-remodal-target="modal" href="#" class="wine-link black">Семигристое белое</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 1 модалка -->
+    <div data-remodal-id="modal" class="remodal">
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <div class="wine-img-wrapper">
+            <a data-remodal-action="close" href="#" class="close">Назад</a>
+            <div class="img-mask"><img src="assets/site/images/bottle-t.png" width="165" alt="" class="bottle"></div>
+          </div>
+          <div class="wine-info">
+            <div>
+              <div class="label">Сухое красное</div>
+              <div class="wine-info-heading">Вино географического наименования <br>сухое красное <span class="red">«Фервино красное»</span> 0,75 л</div>
+            </div>
+            <div class="table">
+              <div class="label">год</div>
+              <div class="label">2019</div>
+              <div class="label">Виноград</div>
+              <div class="label">Каберне Совиньон, Каберне Фран, Мерло</div>
+              <div class="label">Крепость</div>
+              <div class="label">13%</div>
+              <div class="label">Технология</div>
+              <div>Выдержка более 12 месяцев в бочках из кавказского дуба</div>
+              <div class="label">Гастрономия</div>
+              <div class="label">Мясо</div>
+              <div class="label">Температура <br>сервировки</div>
+              <div class="label">16˚ - 17˚С</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /1 модалка -->
+
+    <!-- 2 модалка -->
+    <div data-remodal-id="modal2" class="remodal">
+      <div class="modal-wrapper elipse-bg">
+        <div class="modal-container">
+          <div class="wine-img-wrapper">
+            <a data-remodal-action="close" href="#" class="close white">Назад</a>
+            <div class="img-mask"><img src="assets/site/images/bottle-w.png" height="" width="165" alt="" class="bottle"></div>
+          </div>
+          <div class="wine-info black">
+            <div>
+              <div class="label">Сухое красное</div>
+              <div class="wine-info-heading">Вино географического наименования <br>сухое красное <span class="red">«Фервино красное»</span> 0,75 л</div>
+            </div>
+            <div class="table">
+              <div class="label">год</div>
+              <div class="label">2019</div>
+              <div class="label">Виноград</div>
+              <div class="label">Каберне Совиньон, Каберне Фран, Мерло</div>
+              <div class="label">Крепость</div>
+              <div class="label">13%</div>
+              <div class="label">Технология</div>
+              <div>Выдержка более 12 месяцев в бочках из кавказского дуба</div>
+              <div class="label">Гастрономия</div>
+              <div class="label">Мясо</div>
+              <div class="label">Температура <br>сервировки</div>
+              <div class="label">16˚ - 17˚С</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 модалка -->
+
+    <!-- Кастомный курсор -->
+    <div class="cursor-cirlce hide">
+      <div class="custom-cursor"></div>
+    </div>
+    <!-- /Кастомный курсор -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="assets/site/js/index.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+  </body>
+</html>

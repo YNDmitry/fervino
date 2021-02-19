@@ -40,10 +40,10 @@
         <nav role="navigation" class="nav-menu w-nav-menu">
           <div class="nav-links-wrapper">
             <div class="div-block-3">
-              <a href="#" class="nav-link w-nav-link">Коллекция вин</a>
+              <a href="collections.html" target="_blank" class="nav-link w-nav-link">Коллекция вин</a>
               <a href="#" class="nav-link w-nav-link">О бренде</a>
               <a href="#" class="nav-link w-nav-link">Где купить?</a>
-              <a href="#" class="nav-link w-nav-link">Партнерам</a>
+              <a href="contact.html" target="_blank" class="nav-link w-nav-link">Партнерам</a>
               <a href="#" class="nav-link w-nav-link">Контакты</a>
               <div class="nav-border">
                 <a href="#" class="nav-link lc w-nav-link">Личный кабинет</a>
@@ -61,6 +61,7 @@
 
     <div id="main" class="scroll-main-anchor"></div>
     <section class="section-main">
+
       <div class="section-main-wrapper">
         <div class="content-block">
           <div class="text-content-main">
@@ -73,12 +74,16 @@
           <img src="assets/site/images/vino-bottle.png" sizes="(max-width: 767px) 100vw, 557px" width="557" alt="" class="vino">
         </div>
       </div>
+
     </section>
     
     <section class="section-info">
+
       <div id="wine" class="anchor _1"></div>
       <div id="grapes" class="anchor _2"></div>
+
       <div class="section-items-wrapper">
+        
         <div class="sticky-wrapper">
           <div class="info-block-wrapper">
             <div class="div-block-2">
@@ -99,12 +104,13 @@
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="wine-animation-block">
           
           <div class="canvas">
-            <img src="assets/site/images/winex.png" width="390" alt="" class="wino" style="display: none;">           
+            <img src="assets/site/images/winex.png" alt="" class="wino" style="display: none;">           
           </div>
 
           <div class="achim-particles">
@@ -112,10 +118,10 @@
             <img src="assets/site/images/zn.png" width="35.5" alt="" class="part-2">
             <img src="assets/site/images/ti.png" width="48" alt="" class="part-3">
             <img src="assets/site/images/f.png" width="23" alt="" class="part-4">
-            <img src="assets/site/images/co.png" loading="lazy" width="30.5" alt="" class="part-5">
+            <img src="assets/site/images/co.png" width="30.5" alt="" class="part-5">
           </div>
 
-          <div class="drops">
+          <!-- <div class="drops">
             <img src="assets/site/images/1.png" width="36" alt="" class="part-6">
             <img src="assets/site/images/8.png" width="12" alt="" class="part-6-1">
             <img src="assets/site/images/3.png" width="49.5" alt="" class="part-7">
@@ -132,7 +138,7 @@
             <img src="assets/site/images/4.png" width="33" alt="" class="part-13">
             <img src="assets/site/images/5.png" width="30" alt="" class="part-14">
             <img src="assets/site/images/2.png" width="18" alt="" class="part-15">
-          </div>
+          </div> -->
         </div>
 
         <div class="images-abs-wrapper">
@@ -144,6 +150,7 @@
           </div>
 
           <img src="assets/site/images/rostok.png" srcset="assets/site/images/rostok-p-500.png 500w, assets/site/images/rostok-p-800.png 800w, assets/site/images/rostok-p-1080.png 1080w, assets/site/images/rostok.png 3840w" width="1920" sizes="100vw" alt="" class="rostok">
+          <img src="assets/site/images/rostok-bg.png" srcset="assets/site/images/rostok-bg-p-500.png 500w, assets/site/images/rostok-bg-p-800.png 800w, assets/site/images/rostok-bg-p-1080.png 1080w, assets/site/images/rostok-bg.png 3840w" width="1920" sizes="100vw" alt="" class="rostok-bg">
         
         </div>
 
@@ -208,11 +215,11 @@
 
     </footer>
 
-    <!-- Курсор -->
+    <!-- Кастомный курсор -->
     <div class="cursor-cirlce hide">
       <div class="custom-cursor"></div>
     </div>
-    <!-- /Курсор -->
+    <!-- /Кастомный курсор -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js" integrity="sha256-Yut1YAlvRzggjdRiTu+X56CcayNzkjwk3p34ZZL0WHk=" crossorigin="anonymous"></script>
@@ -231,7 +238,7 @@
     <script>
       var dance = {
         init: function() {
-          this.dance();
+          this.dance()
         },
 
         dance: function() {
@@ -241,7 +248,7 @@
               text = h1.text(),
               i
           
-          for( i = 0; i < text.length; i++ ) {
+          for ( i = 0; i < text.length; i++ ) {
             newText += '<span>' + text.charAt(i) + '</span>'
           }
 
@@ -275,12 +282,12 @@
       });
     </script>
     <script>
-			var spriteImages 	= document.querySelectorAll( '.wino' );
-			var spriteImagesSrc = [];
+			var spriteImages 	= document.querySelectorAll( '.wino' )
+			var spriteImagesSrc = []
 
 			for ( var i = 0; i < spriteImages.length; i++ ) {
-				var img = spriteImages[i];
-				spriteImagesSrc.push( img.getAttribute('src' ) );
+				var img = spriteImages[i]
+				spriteImagesSrc.push( img.getAttribute('src' ) )
 			}
 
 			var initCanvasSlideshow = new CanvasSlideshow({

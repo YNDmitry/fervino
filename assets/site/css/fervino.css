@@ -42,6 +42,15 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Gothampro, sans-serif;
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 900;
+}
+
 p {
   margin-bottom: 0px;
   color: #cfcfcf;
@@ -79,7 +88,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 68px;
+  padding-top: 40px;
   padding-right: 80px;
   padding-left: 80px;
   background-color: transparent;
@@ -378,6 +387,7 @@ img {
   align-items: center;
   border: 1px solid #6b6b6b;
   border-radius: 50%;
+  opacity: 0;
 }
 
 .cursor-cirlce {
@@ -514,9 +524,9 @@ img {
   display: flex;
   width: 100%;
   max-width: 720px;
-  min-height: 2500px;
-  margin-left: 17vw;
-  padding-top: 20vh;
+  min-height: 2180px;
+  margin-left: 15vw;
+  padding-top: 40vh;
   padding-bottom: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -528,7 +538,6 @@ img {
 .sticky-wrapper.margin-top-off {
   height: 290vh;
   min-height: auto;
-  padding-top: 20vh;
   padding-bottom: 0vh;
 }
 
@@ -600,7 +609,6 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   width: 50%;
   height: 2000px;
   -webkit-box-orient: vertical;
@@ -630,8 +638,8 @@ img {
 }
 
 .rostok {
-  width: 110%;
-  margin-bottom: 5vh;
+  position: relative;
+  margin-bottom: -5vh;
 }
 
 .earth {
@@ -972,6 +980,7 @@ img {
 .anchor._3 {
   top: 10%;
   height: 130vh;
+  margin-top: 20vh;
 }
 
 .anchor._1 {
@@ -1003,6 +1012,442 @@ img {
   right: 0%;
   bottom: 0%;
   overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  height: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tabs-content {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+}
+
+.tab-link {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: transparent;
+  color: #878787;
+  font-size: 16px;
+  line-height: 110%;
+  font-weight: 500;
+}
+
+.tab-link.w--current {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 800;
+}
+
+.tabs-menu {
+  position: absolute;
+  z-index: 3;
+  width: 98%;
+  max-width: 1350px;
+  margin-top: 50px;
+}
+
+.tab-content-1 {
+  height: 100%;
+  background-image: url('../images/blur-elips.svg');
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bottles-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.wine-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding-right: 45px;
+  background-image: url('../images/arrow-wine.svg');
+  background-position: 100% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.wine-link:hover {
+  padding-right: 60px;
+}
+
+.wine-link.black {
+  background-image: url('../images/arrow-wine-black.svg');
+  color: #202020;
+}
+
+.info-wine {
+  margin-top: 57px;
+  line-height: 110%;
+  font-weight: 500;
+}
+
+.info-wine.black {
+  color: #202020;
+}
+
+.wine-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.tab-content-2 {
+  height: 100%;
+  background-image: url('../images/bg-tab-igr.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.remodal {
+  overflow: hidden;
+}
+
+.modal-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/bg-tab-igr.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: auto;
+}
+
+.modal-wrapper.elipse-bg {
+  background-color: #000;
+  background-image: url('../images/blur-elips.svg');
+  background-position: 50% 0%;
+}
+
+.wine-img-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 240px;
+  margin-right: 50px;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.wine-info {
+  width: 95%;
+  max-width: 990px;
+  margin-left: auto;
+  padding-top: 130px;
+  padding-right: 50px;
+  padding-left: 130px;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #fff;
+  color: #202020;
+  line-height: 110%;
+  text-align: left;
+}
+
+.wine-info.black {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.modal-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  padding-top: 18vh;
+  padding-left: 50px;
+}
+
+.close {
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #202020;
+  color: #202020;
+  font-size: 16px;
+  line-height: 110%;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.close.white {
+  border-bottom-color: #fff;
+  color: #fff;
+}
+
+.img-mask {
+  margin-left: auto;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.wine-info-heading {
+  margin-top: 20px;
+  margin-bottom: 64px;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.rostok-bg {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+}
+
+.rostor-mask {
+  overflow: hidden;
+}
+
+.red {
+  color: #d6042a;
+  font-weight: 800;
+}
+
+.table {
+  display: -ms-grid;
+  display: grid;
+  width: 98%;
+  max-width: 500px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  -ms-grid-columns: 0.55fr 1fr;
+  grid-template-columns: 0.55fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/partner-bg.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-form {
+  width: 95%;
+  max-width: 1008px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inputs-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  width: 47%;
+}
+
+.input-label {
+  font-size: 12px;
+  line-height: 110%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.input {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #000 #000 hsla(0, 0%, 100%, 0.5);
+  background-color: transparent;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  color: #fff;
+}
+
+.input:focus {
+  border-bottom-color: #fff;
+}
+
+.white-btn {
+  margin-right: 30px;
+  padding: 20px 90px;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  line-height: 160%;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.label-contact {
+  margin-bottom: 10px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.contact {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contact-wrapper {
+  margin-bottom: 57px;
+  font-size: 12px;
+  line-height: 110%;
+}
+
+.form-block {
+  margin-right: 50px;
+}
+
+.heading-p {
+  width: 95%;
+  max-width: 750px;
+  margin-bottom: 100px;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.05em;
+}
+
+.submit-txt {
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 160%;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 @media screen and (max-width: 991px) {
@@ -1120,6 +1565,117 @@ img {
     -ms-transform: scale(4.3);
     transform: scale(4.3);
   }
+
+  .container {
+    padding-bottom: 50px;
+  }
+
+  .tabs {
+    height: auto;
+  }
+
+  .tabs-content {
+    position: relative;
+  }
+
+  .tab-content-1 {
+    padding-top: 190px;
+  }
+
+  .bottles-grid {
+    grid-row-gap: 40px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .info-wine {
+    margin-left: 50px;
+  }
+
+  .wine-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .tab-content-2 {
+    padding-top: 190px;
+  }
+
+  .wine-img-wrapper {
+    margin-right: 0px;
+    padding-right: 50px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .wine-info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+  }
+
+  .modal-container {
+    padding-top: 5vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .img-mask {
+    display: none;
+  }
+
+  .table {
+    grid-column-gap: 20px;
+  }
+
+  .white-btn {
+    margin-bottom: 30px;
+  }
+
+  .btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form-block {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+
+  .heading-p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1154,6 +1710,40 @@ img {
     -webkit-transform: scale(5);
     -ms-transform: scale(5);
     transform: scale(5);
+  }
+
+  .tabs-menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .wine-img-wrapper {
+    margin-bottom: 0vh;
+  }
+
+  .wine-info {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .modal-container {
+    padding-left: 0px;
+  }
+
+  .inputs-wrapper {
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .input-wrapper {
+    width: 100%;
+    margin-bottom: 25px;
   }
 }
 

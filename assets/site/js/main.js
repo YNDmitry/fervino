@@ -6,8 +6,8 @@
 
       //  OPTIONS
       options                     = options || {};
-      options.stageWidth          = options.hasOwnProperty('stageWidth') ? options.stageWidth : 400;
-      options.stageHeight         = options.hasOwnProperty('stageHeight') ? options.stageHeight : 1520;
+      options.stageWidth          = options.hasOwnProperty('stageWidth') ? options.stageWidth : 600;
+      options.stageHeight         = options.hasOwnProperty('stageHeight') ? options.stageHeight : 1300;
       options.pixiSprites         = options.hasOwnProperty('sprites') ? options.sprites : [];
       options.autoPlay            = options.hasOwnProperty('autoPlay') ? options.autoPlay : true;
       options.autoPlaySpeed       = options.hasOwnProperty('autoPlaySpeed') ? options.autoPlaySpeed : [10, 3];
@@ -76,9 +76,6 @@
           
           var texture   = new PIXI.Texture.fromImage( sprites[i] );
           var image     = new PIXI.Sprite( texture );
-
-          image.transform.scale.x = 0.5;
-          image.transform.scale.y = 0.5;
           
           if ( i !== 0  ) {
             TweenMax.set( image, { alpha: 0 } );
