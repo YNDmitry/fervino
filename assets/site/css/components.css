@@ -43,8 +43,12 @@ canvas {
 .nav-menu {
 	backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
-  -moz-backdrop-filter: blur(100px);
   -o-backdrop-filter: blur(100px);
+}
+@-moz-document url-prefix() {
+  .nav-menu {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
 }
 .wine-info {
 	backdrop-filter: blur(50px);

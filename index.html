@@ -109,9 +109,7 @@
 
         <div class="wine-animation-block">
           
-          <div class="canvas">
-            <img src="assets/site/images/winex.png" alt="" class="wino" style="display: none;">           
-          </div>
+          <img src="assets/site/images/winex.png" alt="" class="wino">           
 
           <div class="achim-particles">
             <img src="assets/site/images/mn.png" width="39" alt="" class="part-1">
@@ -173,9 +171,7 @@
       <img src="assets/site/images/earh-soil.png" srcset="assets/site/images/earh-soil-p-500.png 500w, assets/site/images/earh-soil-p-800.png 800w, assets/site/images/earh-soil-p-1080.png 1080w, assets/site/images/earh-soil.png 3834w" sizes="100vw" alt="" class="earth">
       <div id="grapes-2" class="anchor _3"></div>
       <div id="grapes-3" class="anchor _4"></div>
-      <div>
-        <img src="assets/site/images/grapes.png" srcset="assets/site/images/grapes-p-500.png 500w, assets/site/images/grapes-p-800.png 800w, assets/site/images/grapes-p-1080.png 1080w, assets/site/images/grapes-p-1600.png 1600w, assets/site/images/grapes.png 3840w" sizes="100vw" alt="" class="grapes">
-      </div>
+      <img src="assets/site/images/grapes.png" srcset="assets/site/images/grapes-p-500.png 500w, assets/site/images/grapes-p-800.png 800w" sizes="100vw" alt="" class="grapes">
       
       <div class="sticky-wrapper margin-top-off">
         <div class="info-block-wrapper">
@@ -229,10 +225,9 @@
     <script>
       window.SmoothScrollOptions = { 
         animationTime: 5000,
+        stepSize: 150,
         accelerationDelta: 100,
         accelerationMax: 1,
-        pulseAlgorithm: true,
-        pulseNormalize: 1,
       }
     </script>
     <script>
@@ -281,21 +276,5 @@
         dance.init()
       });
     </script>
-    <script>
-			var spriteImages 	= document.querySelectorAll( '.wino' )
-			var spriteImagesSrc = []
-
-			for ( var i = 0; i < spriteImages.length; i++ ) {
-				var img = spriteImages[i]
-				spriteImagesSrc.push( img.getAttribute('src' ) )
-			}
-
-			var initCanvasSlideshow = new CanvasSlideshow({
-				sprites: spriteImagesSrc,
-				displacementImage: 'assets/site/images/clouds.jpg',
-				autoPlay: true,
-				autoPlaySpeed: [1, 2],
-			});
-		</script>
   </body>
 </html>
