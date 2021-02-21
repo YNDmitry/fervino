@@ -112,42 +112,24 @@
           <img src="assets/site/images/winex.png" alt="" class="wino">           
 
           <div class="achim-particles">
-            <img src="assets/site/images/mn.png" width="39" alt="" class="part-1">
-            <img src="assets/site/images/zn.png" width="35.5" alt="" class="part-2">
-            <img src="assets/site/images/ti.png" width="48" alt="" class="part-3">
-            <img src="assets/site/images/f.png" width="23" alt="" class="part-4">
-            <img src="assets/site/images/co.png" width="30.5" alt="" class="part-5">
+            <img src="assets/site/images/11.png" width="58" alt="" class="part-1">
+            <img src="assets/site/images/22.png" width="51" alt="" class="part-2">
+            <img src="assets/site/images/33.png" width="49" alt="" class="part-3">
+            <img src="assets/site/images/44.png" width="40" alt="" class="part-4">
           </div>
 
-          <!-- <div class="drops">
-            <img src="assets/site/images/1.png" width="36" alt="" class="part-6">
-            <img src="assets/site/images/8.png" width="12" alt="" class="part-6-1">
-            <img src="assets/site/images/3.png" width="49.5" alt="" class="part-7">
-            <img src="assets/site/images/4.png" loading="lazy" width="33" alt="" class="part-8">
-            <img src="assets/site/images/7.png" width="17.5" alt="" class="part-8-1">
-            <img src="assets/site/images/2.png" loading="lazy" alt="" class="part-9">
-            <img src="assets/site/images/8.png" width="12" alt="" class="part-9-1">
-          </div>
-
-          <div class="drops-v2">
-            <img src="assets/site/images/3.png" width="49.5" alt="" class="part-10">
-            <img src="assets/site/images/6.png" width="50" alt="" class="part-11">
-            <img src="assets/site/images/11.png" loading="lazy" alt="" class="part-12">
-            <img src="assets/site/images/4.png" width="33" alt="" class="part-13">
-            <img src="assets/site/images/5.png" width="30" alt="" class="part-14">
-            <img src="assets/site/images/2.png" width="18" alt="" class="part-15">
-          </div> -->
         </div>
 
         <div class="images-abs-wrapper">
 
           <div class="drops-rostok">
-            <img src="assets/site/images/10.png" width="8" alt="" class="part-16">
-            <img src="assets/site/images/8.png" width="12" alt="" class="part-17">
-            <img src="assets/site/images/8.png" width="12" alt="" class="part-18">
+            <img src="assets/site/images/dd.png" width="12" alt="" class="part-17">
           </div>
 
-          <img src="assets/site/images/rostok.png" srcset="assets/site/images/rostok-p-500.png 500w, assets/site/images/rostok-p-800.png 800w, assets/site/images/rostok-p-1080.png 1080w, assets/site/images/rostok.png 3840w" width="1920" sizes="100vw" alt="" class="rostok">
+          <div class="rostor-mask">
+            <img src="assets/site/images/gif-maker.gif" alt="">
+          </div>
+
           <img src="assets/site/images/rostok-bg.png" srcset="assets/site/images/rostok-bg-p-500.png 500w, assets/site/images/rostok-bg-p-800.png 800w, assets/site/images/rostok-bg-p-1080.png 1080w, assets/site/images/rostok-bg.png 3840w" width="1920" sizes="100vw" alt="" class="rostok-bg">
         
         </div>
@@ -222,7 +204,6 @@
     <script src="assets/site/js/index.js"></script>
     <script>
       window.SmoothScrollOptions = { 
-        frameRate: 1000,
         animationTime: 5000,
         stepSize: 150,
         accelerationDelta: 100,
@@ -248,24 +229,24 @@
 
           h1.html(newText);
 
-          h1.on('mouseenter mouseleave mousemove', 'span', function(e) {
+          h1.on('mouseenter mouseleave', 'span', function(e) {
             var span = $(this)
 
             if( e.type == 'mouseenter') {
 
-              span.stop(true, false).animate({
+              span.animate({
                 textStrokeWidth: '1px'
-              }, 600)
+              }, 800)
               span.addClass('wave')
 
             } else if( e.type == 'mouseleave' ) {
 
               span.animate({
                 textStrokeWidth: '0px'
-              }, 600)
+              }, 800)
               setTimeout(() => {
                 span.removeClass('wave')
-              }, 600)
+              }, 800)
 
             }
           })
@@ -288,8 +269,10 @@
         let span = document.querySelector(".wave")
         var width = mover.clientWidth;
         var x = e.clientX;
-        var oX = Math.floor((x/width) * 500);
-        span.style.setProperty('background-position', oX + '%' + ' ' + 5 + 'vh')
+        var y = e.clientY;
+        var oX = Math.floor((x/width) * 200);
+        var oY = Math.floor((y/width) * 15);
+        span.style.setProperty('background-position', oX + '%' + ' ' + oY + 'vh')
       }
     </script>
   </body>

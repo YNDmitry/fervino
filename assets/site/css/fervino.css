@@ -301,7 +301,7 @@ img {
 .wave {
   z-index: 7;
   background-image: url('../images/wave.svg');
-  background-position: 0% 5vh;
+  background-position: 50% 5vh;
   background-size: auto;
   background-repeat: repeat-x;
   -webkit-transition: background-position 300ms linear;
@@ -647,12 +647,13 @@ img {
 .rostok {
   position: relative;
   z-index: -2;
+  max-width: none;
 }
 
 .earth {
   position: absolute;
   left: 0%;
-  top: -10%;
+  top: -12%;
   right: 0%;
   z-index: 9;
   width: 100%;
@@ -759,28 +760,28 @@ img {
 .part-1 {
   position: absolute;
   left: 15%;
-  top: 32%;
+  top: 23%;
   bottom: auto;
 }
 
 .part-2 {
   position: absolute;
-  left: 25%;
-  top: 44%;
+  left: 60%;
+  top: 32%;
   right: 0%;
 }
 
 .part-3 {
   position: absolute;
-  top: 51%;
-  right: 27%;
+  top: 40%;
+  right: 70%;
 }
 
 .part-4 {
   position: absolute;
-  left: 19%;
+  left: 60%;
   right: 0%;
-  bottom: 36%;
+  bottom: 50%;
 }
 
 .part-5 {
@@ -892,13 +893,14 @@ img {
 
 .drops-rostok {
   position: absolute;
+  left: 0%;
   top: 0%;
+  right: 0%;
   bottom: 0%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -919,7 +921,7 @@ img {
 .part-17 {
   position: absolute;
   left: 63%;
-  top: 20%;
+  top: 0%;
 }
 
 .part-18 {
@@ -990,8 +992,7 @@ img {
 
 .anchor._3 {
   top: 10%;
-  height: 40%;
-  margin-top: 0vh;
+  height: 50%;
 }
 
 .anchor._1 {
@@ -1000,7 +1001,7 @@ img {
 
 .anchor._4 {
   bottom: 0%;
-  height: 48%;
+  height: 40%;
 }
 
 .small {
@@ -1012,7 +1013,7 @@ img {
   left: 0%;
   top: auto;
   right: 0%;
-  bottom: 0px;
+  bottom: -10%;
   width: 100%;
 }
 
@@ -1209,7 +1210,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 240px;
-  margin-right: 50px;
+  margin-right: 80px;
   margin-bottom: 10vh;
   margin-left: auto;
   -webkit-box-orient: horizontal;
@@ -1230,7 +1231,6 @@ img {
 .wine-info {
   width: 95%;
   max-width: 990px;
-  margin-left: auto;
   padding-top: 130px;
   padding-right: 50px;
   padding-left: 130px;
@@ -1314,7 +1314,20 @@ img {
 }
 
 .rostor-mask {
-  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 107%;
+  margin-bottom: 20vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .red {
@@ -1347,8 +1360,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 110px;
+  padding-bottom: 110px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1493,12 +1506,12 @@ img {
     height: 300vh;
   }
 
-  .footer {
-    background-size: cover;
+  .earth {
+    top: -9%;
   }
 
-  .anchor._4 {
-    height: 140vh;
+  .footer {
+    background-size: cover;
   }
 
   .bg-min {
@@ -1546,6 +1559,10 @@ img {
     -webkit-transform: scale(3.5);
     -ms-transform: scale(3.5);
     transform: scale(3.5);
+  }
+
+  .rostor-mask {
+    margin-bottom: 5vh;
   }
 }
 
@@ -1670,7 +1687,12 @@ img {
 
   .wine-img-wrapper {
     margin-right: 0px;
+    margin-bottom: 2vh;
     padding-right: 50px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
@@ -1684,7 +1706,7 @@ img {
   }
 
   .modal-container {
-    padding-top: 5vh;
+    padding-top: 15vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1786,6 +1808,11 @@ img {
 
   .modal-container {
     padding-left: 0px;
+  }
+
+  .rostor-mask {
+    margin-bottom: 0vh;
+    background-size: 1200px;
   }
 
   .inputs-wrapper {
