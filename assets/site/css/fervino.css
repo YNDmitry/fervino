@@ -84,6 +84,7 @@ img {
   top: 0px;
   right: 0px;
   bottom: auto;
+  z-index: 10001;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -300,7 +301,7 @@ img {
 .wave {
   z-index: 7;
   background-image: url('../images/wave.svg');
-  background-position: 50% 5vh;
+  background-position: 0% 5vh;
   background-size: auto;
   background-repeat: repeat-x;
   -webkit-transition: background-position 300ms linear;
@@ -479,6 +480,10 @@ img {
   color: #ff002f;
 }
 
+.nav-link.w--current {
+  color: #fff;
+}
+
 .nav-link.lc {
   font-size: 28px;
 }
@@ -527,7 +532,7 @@ img {
   max-width: 720px;
   min-height: 2180px;
   margin-left: 15vw;
-  padding-top: 30vh;
+  padding-top: 20vh;
   padding-bottom: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -537,7 +542,7 @@ img {
 }
 
 .sticky-wrapper.margin-top-off {
-  height: 270vh;
+  height: 2500px;
   min-height: auto;
   padding-bottom: 0vh;
 }
@@ -647,7 +652,7 @@ img {
 .earth {
   position: absolute;
   left: 0%;
-  top: -12%;
+  top: -10%;
   right: 0%;
   z-index: 9;
   width: 100%;
@@ -679,7 +684,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   background-image: url('../images/red-wine.jpg');
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -713,6 +718,10 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-image: url('../images/bg-min.jpg');
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .info-block-wrapper {
@@ -981,8 +990,8 @@ img {
 
 .anchor._3 {
   top: 10%;
-  height: 130vh;
-  margin-top: 20vh;
+  height: 40%;
+  margin-top: 0vh;
 }
 
 .anchor._1 {
@@ -991,7 +1000,7 @@ img {
 
 .anchor._4 {
   bottom: 0%;
-  height: 110vh;
+  height: 48%;
 }
 
 .small {
@@ -1003,7 +1012,7 @@ img {
   left: 0%;
   top: auto;
   right: 0%;
-  bottom: -20%;
+  bottom: 0px;
   width: 100%;
 }
 
@@ -1026,15 +1035,16 @@ img {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 12vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1088,7 +1098,7 @@ img {
   z-index: 3;
   width: 98%;
   max-width: 1350px;
-  margin-top: 50px;
+  margin-top: 140px;
 }
 
 .tab-content-1 {
@@ -1202,11 +1212,15 @@ img {
   margin-right: 50px;
   margin-bottom: 10vh;
   margin-left: auto;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -1264,7 +1278,16 @@ img {
 }
 
 .img-mask {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 165px;
   margin-left: auto;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .label {
@@ -1311,6 +1334,11 @@ img {
   grid-template-columns: 0.55fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+.bottle {
+  width: 100%;
+  max-width: none;
 }
 
 .contact-section {
@@ -1381,6 +1409,12 @@ img {
   border-bottom-color: #fff;
 }
 
+.input.area {
+  max-height: 100px;
+  min-height: 70px;
+  min-width: 100%;
+}
+
 .white-btn {
   margin-right: 30px;
   padding: 20px 90px;
@@ -1433,6 +1467,7 @@ img {
 }
 
 .form-block {
+  width: 100%;
   margin-right: 50px;
 }
 
@@ -1459,12 +1494,11 @@ img {
   }
 
   .footer {
-    height: 1499px;
     background-size: cover;
   }
 
   .anchor._4 {
-    height: 170vh;
+    height: 140vh;
   }
 
   .bg-min {

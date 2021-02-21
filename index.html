@@ -25,12 +25,12 @@
     </nav>
 
     <div class="scroll-wrapper">
-      <a href="#wine" data-scroll-time="0.4" style="display:none" class="scroll-btn _1 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
-      <a href="#grapes" data-scroll-time="0.4" style="display:none" class="scroll-btn _2 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" class="arrow"></a>
-      <a href="#grapes-2" data-scroll-time="0.4" style="display:none" class="scroll-btn _3 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
-      <a href="#grapes-3" data-scroll-time="0.4" style="display:none" class="scroll-btn _4 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
-      <a href="#footer" data-scroll-time="0.4" style="display:none" class="scroll-btn _5 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
-      <a href="#main" data-scroll-time="0.4" style="display:none" class="scroll-btn _6 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
+      <a href="#wine" data-scroll-time="0.4" class="scroll-btn _1 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
+      <a href="#grapes" data-scroll-time="0.4" class="scroll-btn _2 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" class="arrow"></a>
+      <a href="#grapes-2" data-scroll-time="0.4" class="scroll-btn _3 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
+      <a href="#grapes-3" data-scroll-time="0.4" class="scroll-btn _4 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
+      <a href="#footer" data-scroll-time="0.4" class="scroll-btn _5 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
+      <a href="#main" data-scroll-time="0.4" class="scroll-btn _6 w-inline-block"><img src="assets/site/images/Arrow-1.svg" loading="lazy" alt="" class="arrow"></a>
       <div class="scroll-txt">scroll to wine</div>
     </div>
 
@@ -58,7 +58,7 @@
         </div>
       </div>
     </header>
-
+    
     <div id="main" class="scroll-main-anchor"></div>
     <section class="section-main">
 
@@ -220,10 +220,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js" integrity="sha256-Yut1YAlvRzggjdRiTu+X56CcayNzkjwk3p34ZZL0WHk=" crossorigin="anonymous"></script>
     <script src="assets/site/js/index.js"></script>
-    <script src="assets/site/js/main.js"></script>
-    <script src="assets/site/js/pixi.min.js"></script>
     <script>
       window.SmoothScrollOptions = { 
+        frameRate: 1000,
         animationTime: 5000,
         stepSize: 150,
         accelerationDelta: 100,
@@ -249,25 +248,26 @@
 
           h1.html(newText);
 
-          h1.on('mouseenter mouseleave', 'span', function(e) {
+          h1.on('mouseenter mouseleave mousemove', 'span', function(e) {
             var span = $(this)
+
             if( e.type == 'mouseenter') {
 
               span.stop(true, false).animate({
                 textStrokeWidth: '1px'
-              }, 400)
+              }, 600)
               span.addClass('wave')
 
             } else if( e.type == 'mouseleave' ) {
 
               span.animate({
                 textStrokeWidth: '0px'
-              })
+              }, 600)
               setTimeout(() => {
                 span.removeClass('wave')
-              }, 400)
+              }, 600)
 
-            }  
+            }
           })
         }
       }
@@ -275,6 +275,22 @@
       $(function() {
         dance.init()
       });
+    </script>
+    <script>
+      let mover = document.querySelector(".animation-text")
+      let random = Math.random()
+
+      mover.addEventListener("mousemove", function(event) {
+        mousePosMove(event);
+      });
+      
+      function mousePosMove(e) {
+        let span = document.querySelector(".wave")
+        var width = mover.clientWidth;
+        var x = e.clientX;
+        var oX = Math.floor((x/width) * 500);
+        span.style.setProperty('background-position', oX + '%' + ' ' + 5 + 'vh')
+      }
     </script>
   </body>
 </html>

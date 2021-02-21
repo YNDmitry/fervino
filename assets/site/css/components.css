@@ -14,22 +14,22 @@ canvas {
   -webkit-text-stroke-color: #6C6C6C;
           text-stroke-color: #6C6C6C;
 }
-.wave {
+/* .wave {
 	animation: waveAnim 8s linear infinite;
   -webkit-animation: waveAnim 8s linear infinite;
   -moz-animation: waveAnim 8s linear infinite;
   -o-animation: waveAnim 8s linear infinite;
 }
 @keyframes waveAnim {
-        0%
-        {
-          background-position: 50% 6vh;
-        }
-        50%
-        {
-          background-position: 150% 6vh;
-        }
-      }
+  0%
+  {
+    background-position: 50% 6vh;
+  }
+  50%
+  {
+    background-position: 150% 6vh;
+  }
+} */
 .cursor-animation {
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
