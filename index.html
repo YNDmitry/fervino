@@ -118,19 +118,18 @@
             <img src="assets/site/images/44.png" width="40" alt="" class="part-4">
           </div>
 
+        <div class="drops"><img src="assets/site/images/blob-t.png" width="31.5" alt="" class="part-5"><img src="assets/site/images/blob-w.png" width="20" alt="" class="part-6"><img src="assets/site/images/blob-r.png" width="31" alt="" class="part-7"><img src="assets/site/images/blob-y.png" width="24" alt="" class="part-8"><img src="assets/site/images/blob-e.png" width="27" alt="" class="part-9"><img src="assets/site/images/blob-t.png" width="25" alt="" class="part-10"><img src="assets/site/images/blob-w.png" width="23" alt="" class="part-11"><img src="assets/site/images/blob-r.png" width="28" alt="" class="part-12"><img src="assets/site/images/blob-q.png" width="26" alt="" class="part-13"><img src="assets/site/images/blob-y.png" width="24" alt="" class="part-14"><img src="assets/site/images/blob-t.png" width="25" alt="" class="part-15"><img src="assets/site/images/blob-w.png" width="23" alt="" class="part-16"><img src="assets/site/images/blob-e.png" width="29" alt="" class="part-17"><img src="assets/site/images/blob-r.png" width="30" alt="" class="part-18"><img src="assets/site/images/blob-t.png" width="26" alt="" class="part-19"><img src="assets/site/images/blob-r.png" width="26" alt="" class="part-20"><img src="assets/site/images/blob-e.png" width="26" alt="" class="part-21"><img src="assets/site/images/blob-y.png" width="24" alt="" class="part-22"><img src="assets/site/images/blob-y.png" width="24" alt="" class="part-23"><img src="assets/site/images/blob-t.png" width="25" alt="" class="part-24"><img src="assets/site/images/blob-r.png" width="26" alt="" class="part-25"><img src="assets/site/images/blob-e.png" width="26" alt="" class="part-26"><img src="assets/site/images/blob-y.png" width="24" alt="" class="part-27"><img src="assets/site/images/blob-y.png" width="24" alt="" class="part-28"><img src="assets/site/images/blob-t.png" width="25" alt="" class="part-29"></div>
+
         </div>
 
         <div class="images-abs-wrapper">
 
-          <div class="drops-rostok">
-            <img src="assets/site/images/dd.png" width="12" alt="" class="part-17">
-          </div>
-
           <div class="rostor-mask">
-            <img src="assets/site/images/gif-maker.gif" alt="">
+            <img src="assets/site/images/rostok-top.png" sizes="(max-width: 767px) 40vw, 346.5px" width="346.5" srcset="assets/site/images/rostok-top.png 500w, assets/site/images/rostok-top.png 693w" alt="" class="rostok-top">
+            <img src="assets/site/images/rostok-back.png" width="9" alt="" class="rostok-bot">
           </div>
 
-          <img src="assets/site/images/rostok-bg.png" srcset="assets/site/images/rostok-bg-p-500.png 500w, assets/site/images/rostok-bg-p-800.png 800w, assets/site/images/rostok-bg-p-1080.png 1080w, assets/site/images/rostok-bg.png 3840w" width="1920" sizes="100vw" alt="" class="rostok-bg">
+          <img src="assets/site/images/rostok-bg.png" srcset="assets/site/images/rostok-bg-p-500.png 500w, assets/site/images/rostok-bg-p-800.png 800w, assets/site/images/rostok-bg-p-1080.png 1080w, assets/site/images/rostok-bg.png 3840w" sizes="100vw" alt="" class="rostok-bg">
         
         </div>
 
@@ -202,6 +201,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js" integrity="sha256-Yut1YAlvRzggjdRiTu+X56CcayNzkjwk3p34ZZL0WHk=" crossorigin="anonymous"></script>
     <script src="assets/site/js/index.js"></script>
+    <script src="assets/site/js/pixi.min.js"></script>
     <script>
       window.SmoothScrollOptions = { 
         animationTime: 5000,
@@ -222,7 +222,7 @@
               h1 = $('h1'),
               text = h1.text(),
               i
-          
+              
           for ( i = 0; i < text.length; i++ ) {
             newText += '<span>' + text.charAt(i) + '</span>'
           }
@@ -236,17 +236,13 @@
 
               span.animate({
                 textStrokeWidth: '1px'
-              }, 800)
-              span.addClass('wave')
-
+              }).addClass('wave')
+              
             } else if( e.type == 'mouseleave' ) {
 
               span.animate({
                 textStrokeWidth: '0px'
-              }, 800)
-              setTimeout(() => {
-                span.removeClass('wave')
-              }, 800)
+              }).removeClass('wave')
 
             }
           })
@@ -259,7 +255,6 @@
     </script>
     <script>
       let mover = document.querySelector(".animation-text")
-      let random = Math.random()
 
       mover.addEventListener("mousemove", function(event) {
         mousePosMove(event);
@@ -271,8 +266,8 @@
         var x = e.clientX;
         var y = e.clientY;
         var oX = Math.floor((x/width) * 200);
-        var oY = Math.floor((y/width) * 15);
-        span.style.setProperty('background-position', oX + '%' + ' ' + oY + 'vh')
+        var oY = Math.floor((y/width) * 130);
+        span.style.setProperty('background-position', -oX + '%' + ' ' + oY + 'px')
       }
     </script>
   </body>

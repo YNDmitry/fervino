@@ -1,38 +1,23 @@
-canvas {
-	display: block;
-	position: relative;
-	left: auto;
-  right: auto;
-}
-.canvas {
-  overflow: hidden;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
 .animation-text {
   -webkit-text-stroke-color: #6C6C6C;
           text-stroke-color: #6C6C6C;
 }
-.wave {
-  transition: all 350ms;
+/* width */
+.adress-wrapper::-webkit-scrollbar {
+  width: 1px;
 }
-/* .wave {
-	animation: waveAnim 8s linear infinite;
-  -webkit-animation: waveAnim 8s linear infinite;
-  -moz-animation: waveAnim 8s linear infinite;
-  -o-animation: waveAnim 8s linear infinite;
+/* Track */
+.adress-wrapper::-webkit-scrollbar-track {
+  background: #fff; 
 }
-@keyframes waveAnim {
-  0%
-  {
-    background-position: 50% 6vh;
-  }
-  50%
-  {
-    background-position: 150% 6vh;
-  }
-} */
+/* Handle */
+.adress-wrapper::-webkit-scrollbar-thumb {
+  background: #D60027; 
+}
+/* Handle on hover */
+.adress-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #D60027; 
+}
 .cursor-animation {
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;

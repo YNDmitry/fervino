@@ -46,7 +46,7 @@ h4 {
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: Gothampro, sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 110%;
   font-weight: 900;
 }
@@ -72,10 +72,10 @@ img {
   z-index: 2;
   width: 100%;
   height: 100vh;
-  background-image: url('../images/part-bg.png'), url('../images/Rectangle.png'), linear-gradient(74.83deg, #0f1009 3.05%, #0f1009 28.8%, #4e0707);
+  background-image: url('../images/Rectangle.png'), url('../images/part-bg.png'), linear-gradient(74.83deg, #0f1009 3.05%, #0f1009 28.8%, #4e0707);
   background-position: 50% 50%, 50% 50%, 0px 0px;
   background-size: cover, cover, auto;
-  background-repeat: no-repeat, no-repeat, repeat;
+  background-repeat: repeat, no-repeat, repeat;
 }
 
 .navbar {
@@ -304,8 +304,6 @@ img {
   background-position: 50% 5vh;
   background-size: auto;
   background-repeat: repeat-x;
-  -webkit-transition: background-position 300ms linear;
-  transition: background-position 300ms linear;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -389,6 +387,10 @@ img {
   border: 1px solid #6b6b6b;
   border-radius: 50%;
   opacity: 0;
+}
+
+.custom-cursor.open {
+  opacity: 1;
 }
 
 .cursor-cirlce {
@@ -506,10 +508,10 @@ img {
   position: relative;
   z-index: 2;
   margin-top: 100vh;
-  background-image: url('../images/part-bg.png'), linear-gradient(130.21deg, #480000, #033c0f);
-  background-position: 50% 50%, 0px 0px;
-  background-size: contain, auto;
-  background-repeat: repeat, repeat;
+  background-image: url('../images/Rectangle.png'), url('../images/part-bg.png'), linear-gradient(130.21deg, #480000, #033c0f);
+  background-position: 50% 50%, 50% 50%, 0px 0px;
+  background-size: contain, contain, auto;
+  background-repeat: repeat, repeat, repeat;
 }
 
 .info-block {
@@ -533,7 +535,6 @@ img {
   min-height: 2180px;
   margin-left: 15vw;
   padding-top: 20vh;
-  padding-bottom: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -665,7 +666,18 @@ img {
   top: auto;
   right: 0%;
   bottom: 0%;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer {
@@ -684,10 +696,10 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/red-wine.jpg');
-  background-position: 50% 0%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('../images/Rectangle.png'), url('../images/red-wine.jpg');
+  background-position: 50% 50%, 50% 0%;
+  background-size: contain, cover;
+  background-repeat: repeat, no-repeat;
 }
 
 .footer-info-wrapper {
@@ -719,16 +731,20 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-image: url('../images/bg-min.jpg');
-  background-position: 50% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('../images/Rectangle.png'), url('../images/bg-min.jpg');
+  background-position: 50% 50%, 50% 100%;
+  background-size: contain, cover;
+  background-repeat: repeat, no-repeat;
 }
 
 .info-block-wrapper {
   position: -webkit-sticky;
   position: sticky;
   top: 20%;
+}
+
+.wino {
+  max-width: none;
 }
 
 .wino.hide {
@@ -759,29 +775,29 @@ img {
 
 .part-1 {
   position: absolute;
-  left: 15%;
-  top: 23%;
+  left: 4%;
+  top: 27%;
   bottom: auto;
 }
 
 .part-2 {
   position: absolute;
-  left: 60%;
-  top: 32%;
+  left: 64%;
+  top: 37%;
   right: 0%;
 }
 
 .part-3 {
   position: absolute;
-  top: 40%;
+  top: 43%;
   right: 70%;
 }
 
 .part-4 {
   position: absolute;
-  left: 60%;
+  left: 51%;
   right: 0%;
-  bottom: 50%;
+  bottom: 47%;
 }
 
 .part-5 {
@@ -792,7 +808,7 @@ img {
 
 .drops {
   width: 100%;
-  height: 26%;
+  height: 100%;
   -webkit-transform: rotate(11deg);
   -ms-transform: rotate(11deg);
   transform: rotate(11deg);
@@ -800,25 +816,25 @@ img {
 
 .part-6 {
   position: absolute;
-  left: 29%;
+  left: 10%;
   top: 0px;
   bottom: 0px;
 }
 
 .part-7 {
   position: absolute;
-  left: 50%;
+  left: 40%;
 }
 
 .part-8 {
   position: absolute;
-  left: 33%;
+  left: 20%;
   top: 20%;
 }
 
 .part-9 {
   position: absolute;
-  left: 48%;
+  left: 40%;
   top: 20%;
 }
 
@@ -851,8 +867,8 @@ img {
 
 .part-10 {
   position: absolute;
-  left: 50%;
-  top: 41%;
+  left: 40%;
+  top: 35%;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -860,19 +876,19 @@ img {
 
 .part-11 {
   position: absolute;
-  left: 27%;
+  left: 10%;
   top: 37%;
 }
 
 .part-12 {
   position: absolute;
-  left: 37%;
+  left: 30%;
   top: 48%;
 }
 
 .part-13 {
   position: absolute;
-  left: 23%;
+  left: 19%;
   top: 60%;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -882,7 +898,7 @@ img {
 .part-14 {
   position: absolute;
   left: 55%;
-  top: 60%;
+  top: 55%;
 }
 
 .part-15 {
@@ -1141,7 +1157,7 @@ img {
 }
 
 .wine-link:hover {
-  padding-right: 60px;
+  padding-right: 55px;
 }
 
 .wine-link.black {
@@ -1210,7 +1226,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 240px;
-  margin-right: 80px;
+  margin-right: 150px;
   margin-bottom: 10vh;
   margin-left: auto;
   -webkit-box-orient: horizontal;
@@ -1282,6 +1298,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 70vh;
   max-width: 165px;
   margin-left: auto;
   -webkit-box-pack: end;
@@ -1306,28 +1323,27 @@ img {
 }
 
 .rostok-bg {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 10%;
+  position: relative;
 }
 
 .rostor-mask {
+  position: absolute;
+  bottom: 24%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 107%;
-  margin-bottom: 20vh;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  width: 19%;
+  margin-left: 4%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .red {
@@ -1350,7 +1366,7 @@ img {
 }
 
 .bottle {
-  width: 100%;
+  height: 100%;
   max-width: none;
 }
 
@@ -1376,9 +1392,9 @@ img {
   background-repeat: no-repeat;
 }
 
-.container-form {
+.container-1140 {
   width: 95%;
-  max-width: 1008px;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1474,6 +1490,7 @@ img {
 }
 
 .contact-wrapper {
+  margin-top: 24px;
   margin-bottom: 57px;
   font-size: 12px;
   line-height: 110%;
@@ -1501,6 +1518,162 @@ img {
   letter-spacing: 0.05em;
 }
 
+.rostok-top {
+  margin-bottom: -1%;
+  margin-left: 33%;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.part-19 {
+  position: absolute;
+  left: 28%;
+  top: 10%;
+}
+
+.part-20 {
+  position: absolute;
+  top: 10%;
+}
+
+.part-21 {
+  position: absolute;
+  top: 27%;
+}
+
+.part-22 {
+  position: absolute;
+  top: 50%;
+}
+
+.part-23 {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
+.part-24 {
+  position: absolute;
+  left: 60%;
+  top: 26%;
+}
+
+.part-25 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+.part-26 {
+  position: absolute;
+  top: 4%;
+}
+
+.part-27 {
+  position: absolute;
+  top: 40%;
+}
+
+.part-28 {
+  position: absolute;
+  left: 26%;
+  top: 40%;
+}
+
+.part-29 {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+.s-kupit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 140px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/Rectangle.png'), linear-gradient(72.59deg, #210d0d, #4e0707);
+  background-position: 50% 50%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: repeat, repeat;
+}
+
+.city {
+  margin-right: 30px;
+  color: #878787;
+  font-size: 16px;
+  line-height: 110%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.city.w--current {
+  color: #fff;
+  font-weight: 800;
+}
+
+.city-tabs {
+  margin-top: 61px;
+  margin-bottom: 40px;
+}
+
+.map {
+  width: 100%;
+  max-width: 780px;
+}
+
+.adress-wrapper {
+  overflow: auto;
+  width: 100%;
+  max-width: 360px;
+}
+
+.map-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.adress {
+  height: 200px;
+  padding: 25px 49px 25px 48px;
+  background-color: #3d1111;
+}
+
+.adress.bg-color {
+  background-color: #300707;
+}
+
+.adress-label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.adress-p {
+  margin-bottom: 10px;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 1920px) {
   .sticky-wrapper.margin-top-off {
     height: 300vh;
@@ -1516,6 +1689,10 @@ img {
 
   .bg-min {
     bottom: -25%;
+  }
+
+  .rostok-top {
+    margin-left: 32%;
   }
 }
 
@@ -1545,10 +1722,11 @@ img {
   }
 
   .sticky-wrapper {
-    width: 100%;
-    max-width: none;
-    margin-right: 80px;
     margin-left: 90px;
+  }
+
+  .wine-animation-block {
+    width: 100%;
   }
 
   .earth {
@@ -1562,7 +1740,12 @@ img {
   }
 
   .rostor-mask {
-    margin-bottom: 5vh;
+    bottom: 20%;
+  }
+
+  .city {
+    display: inline-block;
+    margin-bottom: 20px;
   }
 }
 
@@ -1617,7 +1800,11 @@ img {
   }
 
   .wine-animation-block {
-    display: none;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
   }
 
   .footer {
@@ -1718,6 +1905,10 @@ img {
     display: none;
   }
 
+  .rostor-mask {
+    width: 40%;
+  }
+
   .table {
     grid-column-gap: 20px;
   }
@@ -1753,6 +1944,28 @@ img {
 
   .heading-p {
     width: 100%;
+  }
+
+  .rostok-bot {
+    width: 3.5%;
+  }
+
+  .map {
+    height: 600px;
+  }
+
+  .adress-wrapper {
+    height: 500px;
+    max-width: none;
+  }
+
+  .map-wrapper {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
