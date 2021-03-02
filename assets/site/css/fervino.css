@@ -1058,10 +1058,10 @@ img {
   display: flex;
   width: 95%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 12vh;
+  padding-bottom: 8vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1122,7 +1122,7 @@ img {
 .tabs-menu {
   position: absolute;
   z-index: 3;
-  width: 98%;
+  width: 99%;
   max-width: 1350px;
   margin-top: 140px;
 }
@@ -1139,8 +1139,15 @@ img {
   display: -ms-grid;
   display: grid;
   width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-items: end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-auto-columns: 1fr;
-  grid-column-gap: 40px;
+  grid-column-gap: 10em;
   grid-row-gap: 16px;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1151,9 +1158,9 @@ img {
 .wine-link {
   display: inline-block;
   margin-top: 10px;
-  padding-right: 45px;
+  padding-right: 55px;
   background-image: url('../images/arrow-wine.svg');
-  background-position: 100% 50%;
+  background-position: 95% 50%;
   background-size: auto;
   background-repeat: no-repeat;
   -webkit-transition: all 300ms ease;
@@ -1166,7 +1173,7 @@ img {
 }
 
 .wine-link:hover {
-  padding-right: 55px;
+  background-position: 100% 50%;
 }
 
 .wine-link.black {
@@ -1185,10 +1192,6 @@ img {
 }
 
 .wine-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1282,8 +1285,8 @@ img {
   display: flex;
   overflow: hidden;
   height: 100%;
-  padding-top: 18vh;
-  padding-left: 50px;
+  padding-top: 20vh;
+  padding-left: 80px;
 }
 
 .close {
@@ -1385,8 +1388,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 130px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1403,7 +1405,7 @@ img {
 
 .container-1140 {
   width: 95%;
-  max-width: 1140px;
+  max-width: 1190px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1494,6 +1496,7 @@ img {
 }
 
 .contact {
+  line-height: 20px;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -1513,16 +1516,16 @@ img {
 .heading-p {
   width: 95%;
   max-width: 750px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 27px;
   letter-spacing: 0.05em;
 }
 
 .submit-txt {
   opacity: 0.5;
   font-size: 12px;
-  line-height: 160%;
+  line-height: 22px;
   font-weight: 500;
   letter-spacing: 0.05em;
 }
@@ -1633,13 +1636,11 @@ img {
 }
 
 .city-tabs {
-  margin-top: 61px;
   margin-bottom: 40px;
 }
 
 .map {
   width: 100%;
-  max-width: 780px;
 }
 
 .adress-wrapper {
@@ -1653,7 +1654,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
+  height: 500px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1683,16 +1684,25 @@ img {
   font-weight: 500;
 }
 
-.div-block {
+.btn-links-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .year-confirm-overlay {
@@ -1701,7 +1711,7 @@ img {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  z-index: 15000;
+  z-index: -1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1745,11 +1755,53 @@ img {
   -webkit-transition: all 350ms linear;
   transition: all 350ms linear;
   text-align: center;
+  cursor: pointer;
 }
 
 .year-p {
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+.btn-link {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  color: #cfcfcf;
+  font-size: 12px;
+  line-height: 160%;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #fff;
+}
+
+.brand-info {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  max-width: 683px;
+  margin-bottom: 80px;
+  padding: 70px 59px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(0, 0%, 100%, 0.2);
+  background-color: rgba(32, 10, 10, 0.2);
+}
+
+.sunset {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+}
+
+.brand-info-wrapper {
+  position: relative;
 }
 
 @media screen and (min-width: 1920px) {
@@ -1921,7 +1973,8 @@ img {
   }
 
   .bottles-grid {
-    grid-row-gap: 40px;
+    justify-items: start;
+    grid-row-gap: 50px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -1931,6 +1984,10 @@ img {
   }
 
   .wine-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2082,8 +2139,24 @@ img {
   }
 
   .tabs-menu {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
+  }
+
+  .info-wine {
+    margin-left: 0px;
+  }
+
+  .wine-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .wine-img-wrapper {

@@ -1,6 +1,16 @@
 .year-confirm-overlay {
   z-index: -1 !important;
 }
+.ymodal {}
+.ymodal.open .year-confirm-overlay {
+  z-index: 15000 !important;
+}
+.ymodal.open .year-confirm {
+  transform: scale(1);
+}
+.ymodal.hidden .year-confirm {
+  opacity: 0;
+}
 .animation-text {
   -webkit-text-stroke-color: #6C6C6C;
           text-stroke-color: #6C6C6C;
@@ -36,8 +46,17 @@
   -webkit-backdrop-filter: blur(100px);
   -o-backdrop-filter: blur(100px);
 }
+.brand-info {
+	backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  -moz-backdrop-filter: blur(50px);
+  -o-backdrop-filter: blur(50px);
+}
 @-moz-document url-prefix() {
   .nav-menu {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+  .year-confirm {
     background-color: rgba(0, 0, 0, 0.4) !important;
   }
 }
@@ -47,6 +66,21 @@
   -moz-backdrop-filter: blur(50px);
   -o-backdrop-filter: blur(50px);
 }
+.wine-card:hover .wine-link {
+  background-position: 100% 50%;
+}
+.label {
+  line-height: 18px;
+}
+.wine-info .table > div:not(.label) {
+  line-height: 22px;
+}
+.wine-info {background: #F0DFBC;}
+.s-kupit {
+  padding-bottom: 0px;
+  padding-top: 140px;
+}
+  
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
