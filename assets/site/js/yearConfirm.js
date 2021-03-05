@@ -1,3 +1,4 @@
+// create modal
 function createModal() {
   const modal = document.createElement('div')
   modal.classList.add('ymodal')
@@ -19,29 +20,42 @@ function createModal() {
   return modal
 }
 
-const $modal = createModal()
+let $modal = createModal()
+let destroyed = false
+
+// destroy modal window
+function destroy() {
+  if (!openModal.loaded) {
+    $modal.remove()
+    destroyed = true
+  }
+}
+
+// open modal window
 window.addEventListener('load', openModal)
 
 function openModal() {
-  const loaded = localStorage.getItem('year-confirm')
+  let loaded = localStorage.getItem('year-confirm')
+  !loaded ? '' : destroy()
   if (!loaded) {
     $modal.classList.add('open')
     document.body.style.overflow = 'hidden'
   }
 }
 
-// closeModal
 
-const closeModal = document.getElementById('close-year-modal')
-closeModal.addEventListener('click', handlerModal)
+// close modal window
+const closeModalBtn = document.getElementById('close-year-modal')
+closeModalBtn.addEventListener('click', closeModal)
 
-function handlerModal() {
-  $modal.classList.add('hidden')
-  setTimeout(() => {
-    $modal.classList.remove('open')
-  }, 300)
-  document.body.style.overflow = 'visible'
+function closeModal() {
   localStorage.setItem('year-confirm', JSON.stringify(true))
+  $modal.classList.add('hidden')
+  document.body.style.overflow = 'visible'
+  setTimeout(() => {
+    destroy()
+  }, 300)
 }
 
+// Api index.js
 Webflow.require('ix2').init()
