@@ -80,6 +80,33 @@
   padding-bottom: 0px;
   padding-top: 140px;
 }
+.adress:nth-child(2n) {
+  background-color: #300707;
+}
+.loader-vec {
+  background-image: url('../images/loader-vector.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  width: 300px;
+  animation: loader 2s linear infinite;
+  -webkit-animation: loader 2s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+}
+@keyframes loader {
+  0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; }
+}
+@-webkit-keyframes loader {
+  0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; }
+}
+@-moz-keyframes loader {
+  0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; }
+}
+@-o-keyframes loader {
+  0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; }
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
